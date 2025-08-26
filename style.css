@@ -426,6 +426,25 @@ footer {
     .timeline-item:nth-child(even) { left: 0; }
     .timeline-item::after { left: 10px; }
 
+    /* Di dalam @media (max-width: 768px) { ... } */
+
+
+/* Gaya untuk container tombol */
+.hero-content .cta-buttons {
+ display: flex;
+ flex-direction: column; /* Ubah menjadi kolom agar tombol berada di atas dan bawah */
+ align-items: center; /* Tengahkan tombol secara horizontal */
+}
+
+
+/* Gaya untuk masing-masing tombol */
+.hero-content .cta-buttons a {
+ margin: 0.5rem 0; /* Beri jarak vertikal antar tombol */
+ width: 80%; /* Lebarkan tombol agar mengisi sebagian layar */
+ text-align: center; /* Tengahkan teks di dalam tombol */
+ box-sizing: border-box; /* Pastikan padding tidak menambah lebar total */
+}
+
     /* FIX: Mengatur skills di mobile */
     .skills-container {
         flex-direction: column;
